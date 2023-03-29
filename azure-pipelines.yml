@@ -50,7 +50,6 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: 'Publish the project - Release'
   inputs:
-    version: '6.x'
     command: 'publish'
     projects: '**/*.csproj'
     publishWebProjects: false
