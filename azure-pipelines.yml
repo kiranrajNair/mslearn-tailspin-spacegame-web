@@ -43,11 +43,11 @@ steps:
       projects: '**/*.csproj'
 
 - template: templates/build.yml
-  Parameters:
+  parameters:
     buildConfiguration: 'Debug'
 
 - template: templates/build.yml
-  Parameters:
+  parameters:
     buildConfiguration: 'Release'
 
 - task: PublishBuildArtifacts@1
